@@ -21,12 +21,17 @@ body.light-mode {
 }
 
 * {
+     font-family: "monospace", monospace, "Courier New", Courier, monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    
     background-image: 
         linear-gradient(var(--bg-color), var(--bg-color)), 
         url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
@@ -67,7 +72,7 @@ nav {
     color: var(--accent-color);
 }
 .ods-number {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--accent-color);
     margin-right: 0.5rem;
 }
@@ -105,6 +110,7 @@ main {
 }
 
 h1, h2, h3 {
+    
     text-align: center;
     margin-bottom: 1.5rem;
     color: var(--accent-color);
@@ -117,7 +123,7 @@ li, p {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -351,7 +357,7 @@ blockquote, .content-block blockquote {
 
 .stat-bar-fill {
     height: 30px;
-    background: linear-gradient(90deg, #10b981, #22c55e);
+    background: linear-gradient(90deg, #108cb9, #7adffd);
     width: 0%;
     transition: width 1.5s ease-in-out;
     display: flex;
