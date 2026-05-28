@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdgeEco | Estadístiques d'Impacte</title>
+   <link rel="stylesheet" href="/assets/style/css/style.css">
+  
+</head>
+<body class="dark-mode">
+
+   <nav>
+        <div class="logo">EdgeEco</div>
+        <ul>
+            <li><a href="index.html"class="active">Home</a></li>
+            <li><a href="educacio.html">Educació</a></li>
+            <li><a href="ods.html" >ODS</a></li>
+            <li><a href="simulador.html">Simulador</a></li>
+            <li><a href="llista.html">Llista</a></li>
+            <li><a href="alta.html">Alta</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="exit.html">Èxit</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <button id="dark-mode-toggle">
+            canviar el mode 
+        </button>
+    </nav>
+
+   <main>
+    <header class="page-header">
+        <h1>Estadístiques de la Xarxa</h1>
+        <p>Monitoratge en temps real de l'estalvi d'emissions i eficiència del hardware.</p>
+    </header>
+
+    <section class="grid">
+        <div class="card card-centered">
+            <h3>Total CO₂ Estalviat</h3>
+            <div id="total-co2" class="counter">0</div>
+            <p>Kilograms de carboni evitats</p>
+        </div>
+
+        <div class="card card-centered">
+            <h3>Nodes a la Vora</h3>
+            <div id="total-nodes" class="counter">0</div>
+            <p>Dispositius processant localment</p>
+        </div>
+    </section>
+
+    <section class="highlight-box section-spacing-sm">
+        <h2>Eficiència per Tipus de Hardware</h2>
+        <p>Percentatge de hardware reutilitzat que actualment dóna servei a la xarxa.</p>
+        
+        <label>PC Reutilitzats (Economia Circular)</label>
+        <div class="stat-bar-container">
+            <div id="bar-reutilitzat" class="stat-bar-fill">0%</div>
+        </div>
+
+        <label>Dispositius de Baix Consum (Raspberry/ARM)</label>
+        <div class="stat-bar-container">
+            <div id="bar-lowpower" class="stat-bar-fill">0%</div>
+        </div>
+    </section>
+</main>
+    <footer>
+        <p>&copy; 2026 Projecte EdgeEco - Transparència Ambiental Digital</p>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdgeEco | Inventari de Nodes</title>
+    <link rel="stylesheet" href="/assets/style/css/style.css">
+</head>
+<body class="dark-mode">
+    
+     <nav>
+        <div class="logo">EdgeEco</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="educacio.html">Educació</a></li>
+            <li><a href="ods.html" >ODS</a></li>
+            <li><a href="simulador.html">Simulador</a></li>
+            <li><a href="llista.html"class="active">Llista</a></li>
+            <li><a href="alta.html">Alta</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="exit.html">Èxit</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <button id="dark-mode-toggle">
+            canviar el mode 
+        </button>
+    </nav>
+   <main>
+    <h1>Inventari de Nodes Edge</h1>
+    <section class="form-section" style="margin-bottom: 2rem; padding: 1rem;">
+        <div class="features-flex">
+            <input type="text" id="cerca-text" placeholder="Cercar per nom o ciutat..." style="flex: 1; min-width: 200px;">
+            
+            <select id="filtre-tipus">
+                <option value="tots">Tots els tipus de maquinari</option>
+                <option value="reutilitzat">PC Reutilitzat</option>
+                <option value="raspberry">Raspberry Pi / MicroNode</option>
+                <option value="sensor">Sensor Mediambiental IoT</option>
+            </select>
+
+            <select id="ordre-noms">
+                <option value="defecte">Ordre per defecte (ID)</option>
+                <option value="asc">Nom (A - Z)</option>
+                <option value="desc">Nom (Z - A)</option>
+            </select>
+        </div>
+    </section>
+    <section id="dispositius-container" class="grid">
+        </section>
+
+    <section id="resum-impacte" class="highlight-box impact-summary-box">
+        <h2>Resum d'Impacte Total</h2>
+        <div class="counters-flex">
+            <div>
+                <p>Nodes Totals</p>
+                <h3 id="total-items">0</h3>
+            </div>
+            <div>
+                <p>Estalvi CO₂ Acumulat</p>
+                <h3 id="total-co2-estalvi">0 kg</h3>
+            </div>
+            <div>
+                <p>Consum Estimats (Wh)</p>
+                <h3 id="total-consum">0 Wh</h3>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2026 Projecte EdgeEco - Comunicació Asíncrona i Sostenibilitat</p>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdgeEco | Simulador d'Impacte</title>
+    <link rel="stylesheet" href="/assets/style/css/style.css">
+</head>
+<body class="dark-mode">
+
+     <nav>
+        <div class="logo">EdgeEco</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="educacio.html">Educació</a></li>
+            <li><a href="ods.html" >ODS</a></li>
+            <li><a href="simulador.html"class="active">Simulador</a></li>
+            <li><a href="llista.html">Llista</a></li>
+            <li><a href="alta.html">Alta</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="exit.html">Èxit</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <button id="dark-mode-toggle">
+            canviar el mode 
+        </button>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <h1>Simulador de Petjada de Carboni</h1>
+            <p>Compara el model actual (Cloud centralitzat) vs el model sostenible (Edge Computing).</p>
+        </header>
+
+        <section class="form-section">
+            <form id="form-simulador" class="eco-form">
+                <div class="form-group">
+                    <label for="dades-mb">Volum de dades a processar (GB al mes):</label>
+                    <input type="number" id="dades-gb" placeholder="Ex: 100" required min="1">
+                    <small>Introdueix la quantitat de dades estimada que genera la teva infraestructura.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="distancia">Distància mitjana al servidor (km):</label>
+                    <select id="distancia" required>
+                        <option value="5000">Cloud Transoceànic (5000+ km)</option>
+                        <option value="1000">Cloud Regional (1000 km)</option>
+                        <option value="1">Edge Local (1 km)</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="btn-enviar">Calcular Impacte Ambiental</button>
+            </form>
+        </section>
+
+        <section id="resultats-simulacio" class="grid">
+            <div class="card">
+                <h3>Model Cloud</h3>
+                <p id="cloud-co2">--</p>
+                <small>Emissions estimades de CO2 per trànsit i refrigeració.</small>
+            </div>
+            <div class="card">
+                <h3>Model Edge Sostenible</h3>
+                <p id="edge-co2">--</p>
+                <small>Reducció gràcies al processament de proximitat.</small>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projecte EdgeEco - Dades reals per a un futur verd.</p>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

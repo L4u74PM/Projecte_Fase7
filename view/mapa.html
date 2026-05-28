@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdgeEco | Mapa de la Xarxa</title>
+    <link rel="stylesheet" href="/assets/style/css/style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+    
+</head>
+<body class="dark-mode">
+
+    
+     <nav>
+        <div class="logo">EdgeEco</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="educacio.html">Educació</a></li>
+            <li><a href="ods.html" >ODS</a></li>
+            <li><a href="simulador.html">Simulador</a></li>
+            <li><a href="llista.html">Llista</a></li>
+            <li><a href="alta.html">Alta</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="mapa.html"class="active">Mapa</a></li>
+            <li><a href="exit.html">Èxit</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <button id="dark-mode-toggle">
+            canviar el mode 
+        </button>
+    </nav>
+
+   <main>
+    <header class="page-header">
+        <h1>Mapa de Nodes Descentralitzats</h1>
+        <p>Visualització de la infraestructura local. Cada punt representa un dispositiu que evita l'enviament de dades a servidors transoceànics.</p>
+        <ul>
+            <li><strong>Verd:</strong> PC Reutilitzat</li>
+            <li><strong>Groc:</strong> Sensor Mediambiental IoT</li>
+            <li><strong>Blau:</strong> Raspberry Pi / MicroNode (Baix Consum)</li>
+        </ul>
+    </header>
+
+    <section class="map-container">
+        <div id="network-map"></div>
+    </section>
+
+    <section class="highlight-box">
+        <h2>Sobirania de Dades</h2>
+        <p>
+            A diferència del model Cloud tradicional, on les teves dades poden estar a qualsevol part del món, 
+            el <strong>Edge Computing</strong> manté la informació dins del teu territori. Això no només estalvia 
+            energia, sinó que millora la privacitat i la governança (ASG).
+        </p>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2026 Projecte EdgeEco - Infraestructura Digital de Proximitat</p>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 3,
+    "nom": "Sensor Mediambiental IoT",
+    "lloc": "Tarragona",
+    "tipus": "sensor",
+    "email": "tarraco.eco@edgeeco.com",
+    "lat": 41.1183,
+    "lng": 1.244
+  },
+  {
+    "id": 4,
+    "nom": "Servidor Oficina Reutilitzat",
+    "lloc": "Lleida",
+    "tipus": "reutilitzat",
+    "email": "lleida.admin@edgeeco.com",
+    "lat": 41.6149,
+    "lng": 0.6294
+  },
+  {
+    "id": 5,
+    "nom": "MicroNode Baix Consum",
+    "lloc": "Manresa",
+    "tipus": "raspberry",
+    "email": "manresa.edge@edgeeco.com",
+    "lat": 41.7311,
+    "lng": 1.8343
+  },
+  {
+    "id": 7,
+    "nom": "Test Mapa",
+    "lloc": "Terrassa",
+    "tipus": "raspberry",
+    "email": "test@terrassa.com",
+    "lat": 41.5629,
+    "lng": 2.0147
+  }
+]

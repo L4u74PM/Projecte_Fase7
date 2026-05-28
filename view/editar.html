@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdgeEco | Editar Dispositiu</title>
+    <link rel="stylesheet" href="/assets/style/css/style.css">
+</head>
+<body class="dark-mode">
+
+     <nav>
+        <div class="logo">EdgeEco</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="educacio.html">Educació</a></li>
+            <li><a href="ods.html" >ODS</a></li>
+            <li><a href="simulador.html">Simulador</a></li>
+            <li><a href="llista.html">Llista</a></li>
+            <li><a href="alta.html">Alta</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="exit.html">Èxit</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <button id="dark-mode-toggle">
+            canviar el mode 
+        </button>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <h1>Modificar Node Edge</h1>
+            <p>Actualitza les dades del dispositiu seleccionat.</p>
+        </header>
+
+        <section class="form-section">
+            <form id="form-editar">
+                <input type="hidden" id="edit-id">
+
+                <div class="form-group">
+                    <label for="edit-nom">Nom del Dispositiu</label>
+                    <input type="text" id="edit-nom" required minlength="3" maxlength="30">
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-lloc">Ubicació (Ciutat)</label>
+                    <select id="edit-lloc" required>
+                        <option value="">-- Selecciona una ciutat --</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Girona">Girona</option>
+                        <option value="Tarragona">Tarragona</option>
+                        <option value="Lleida">Lleida</option>
+                        <option value="Manresa">Manresa</option>
+                        <option value="Terrassa">Terrassa</option>
+                        <option value="Sabadell">Sabadell</option>
+                        <option value="Mataró">Mataró</option>
+                        <option value="Reus">Reus</option>
+                        <option value="Salt">Salt</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-tipus">Tipus de Hardware</label>
+                    <select id="edit-tipus" required>
+                        <option value="reutilitzat">PC Reutilitzat (Economia Circular)</option>
+                        <option value="raspberry">Raspberry Pi / MicroNode (Baix Consum)</option>
+                        <option value="sensor">Sensor Mediambiental IoT</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-email">Email de l'Administrador</label>
+                    <input type="email" id="edit-email" required>
+                </div>
+
+                <div class="form-actions-layout">
+                    <button type="submit" id="btn-enviar">Guardar Canvis</button>
+                    <a href="llista.html" class="btn-cancel">Cancelar</a>
+                </div>
+            </form>
+
+            <div id="edit-error"></div>
+            <div id="missatge-estat"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projecte EdgeEco - Desenvolupament Web Sostenible</p>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

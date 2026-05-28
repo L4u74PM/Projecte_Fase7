@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdgeEco | Inici de Sessió</title>
+    <link rel="stylesheet" href="/assets/style/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">EdgeEco</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="educacio.html">Educació</a></li>
+            <li><a href="ods.html" >ODS</a></li>
+            <li><a href="simulador.html">Simulador</a></li>
+            <li><a href="llista.html">Llista</a></li>
+            <li><a href="alta.html">Alta</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="exit.html">Èxit</a></li>
+            <li><a href="login.html"class="active">Login</a></li>
+        </ul>
+        <button id="dark-mode-toggle">
+            canviar el mode 
+        </button>
+    </nav>
+
+    <main>
+        <section class="form-section">
+            <h1>Accés Administrador</h1>
+            <p>Inicia sessió per gestionar els nodes de la xarxa Edge.</p>
+
+            <form id="form-login" class="eco-form">
+                <div class="form-group">
+                    <label for="user-email">Correu Electrònic:</label>
+                    <input type="email" id="user-email" name="user-email" 
+                           placeholder="admin@edgeeco.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contrasenya:</label>
+                    <input type="password" id="password" name="password" 
+                           placeholder="••••••••" required minlength="6">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" id="btn-enviar">Entrar al Panell</button>
+                </div>
+            </form>
+        </section>
+
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projecte EdgeEco - Seguretat i Responsabilitat Digital</p>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
