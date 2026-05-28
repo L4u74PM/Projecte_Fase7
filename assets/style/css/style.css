@@ -113,6 +113,7 @@ li, p {
     border-radius: 12px;
     border-left: 4px solid var(--accent-color);
     transition: transform 0.2s, background-color 0.3s;
+    margin: 1rem 0 1rem 0;
 }
 
 .card:hover {
@@ -153,6 +154,14 @@ input:focus, select:focus {
 }
 
 /* botones */
+a.btn-primary {
+    background: var(--accent-color); 
+    color: var(--bg-color); 
+    padding: 1rem 2rem;
+    text-decoration: none; 
+    border-radius: 8px; 
+    font-weight: bold;
+}
 button, .btn-cancel, .btn-secondary {
     display: inline-block;
     padding: 0.8rem 1.5rem;
