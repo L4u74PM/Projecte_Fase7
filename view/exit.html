@@ -15,10 +15,10 @@
             <li><a href="ods.html" >ODS</a></li>
             <li><a href="simulador.html">Simulador</a></li>
             <li><a href="llista.html">Llista</a></li>
-            <li><a href="alta.html">Alta</a></li>
             <li><a href="stats.html">Stats</a></li>
             <li><a href="mapa.html">Mapa</a></li>
-            <li><a href="exit.html"class="active">Èxit</a></li>
+            <li><a href="exit.html" class="active">Èxit</a></li>
+            <li><a href="alta.html">Alta</a></li>
             <li><a href="login.html">Login</a></li>
         </ul>
         <button id="dark-mode-toggle">
@@ -26,48 +26,71 @@
         </button>
     </nav>
 
-
-  <main>
+    <main>
         <header class="page-header">
             <h1>Cas d'Èxit: IBM & Edge Computing</h1>
-            <p>Anàlisi d'una gran empresa tecnològica i el seu impacte ambiental.</p>
-            <img src="assets/img/image copy 3.png" alt="IBM Edge Computing">
+            <p>Anàlisi pràctica de com una gran empresa tecnològica redueix el seu impacte ambiental apropant les dades a l'usuari.</p>
+            <img src="assets/img/image copy 3.png" alt="IBM Edge Computing" class="portada" id="portada">
         </header>
 
         <section class="content-block">
             <article class="highlight-box">
-                <h2>L'Empresa: IBM</h2>
+                <h2>L'Empresa i la seva Visió: IBM</h2>
                 <p>
-                    IBM ha transformat el seu model de negoci cap a la "Computació Híbrida", posant el 
-                    <strong>Edge Computing</strong> al centre de la seva estratègia de sostenibilitat. Mitjançant el desplegament d'intel·ligència artificial descentralitzada, la companyia demostra com optimitzar els processos industrials reduint dràsticament la dependència dels grans nodes de connexió internacionals. Aquesta arquitectura permet processar milers de dades per segon al mateix lloc on es generen, minimitzant l'enviament massiu d'informació cap a servidors transcontinentals i creant un ecosistema molt més net, resilient i eficient.
+                    Durant anys, el model tecnològic global s'ha basat a enviar tota la informació a grans centres de dades situats a milers de quilòmetres. Avui, IBM ha transformat el seu model de negoci cap a la "Computació Híbrida", posant l'<strong>Edge Computing (computació de proximitat)</strong> al centre de la seva estratègia de sostenibilitat. 
+                </p>
+                <p>
+                    Mitjançant el desplegament d'intel·ligència artificial descentralitzada, la companyia demostra com és possible optimitzar els processos industrials sense dependre d'aquests grans nodes internacionals. Aquesta nova arquitectura permet processar milers de dades per segon just al mateix lloc on es generen (una fàbrica, un hospital o un vehicle). D'aquesta manera, només s'envia al núvol la informació estrictament necessària, minimitzant el trànsit massiu de dades i creant un ecosistema digital molt més net, ràpid i eficient.
                 </p>
             </article>
 
             <div class="grid grid-spacing">
                 <div class="card">
-                    <h3>El Repte</h3>
-                    <p>Una fàbrica de cotxes genera 1 TB de dades al dia. Enviar tot això al Cloud consumia energia massiva i causava retards en la seguretat. El trànsit constant col·lapsava les xarxes locals, augmentava l'escalfament dels sistemes de telecomunicacions i requeria una infraestructura de refrigeració comercial excessiva als servidors centrals remots, augmentant els costos operatius i mediambientals.</p>
+                    <h3>El Repte: La saturació de la xarxa</h3>
+                    <p>
+                        Per entendre el problema, imaginem una fàbrica de cotxes moderna. Aquesta instal·lació genera aproximadament <strong>1 Terabyte de dades al dia</strong> només amb els sensors de les seves màquines. 
+                    </p>
+                    <p>
+                        Enviar tot aquest volum d'informació de manera constant al núvol (Cloud) consumia quantitats enormes d'energia. El trànsit ininterromput col·lapsava les xarxes locals de telecomunicacions, augmentava la temperatura dels equips d'enviament i obligava a utilitzar sistemes de refrigeració extrems als servidors centrals. Això no només disparava els costos econòmics de l'empresa, sinó que generava una petjada de carboni insostenible i provocava retards perillosos en els sistemes de seguretat de la fàbrica.
+                    </p>
                 </div>
                 <div class="card">
-                    <h3>La Solució</h3>
-                    <p>Implementació de <strong>IBM Edge Application Manager</strong>. Processament de dades en la mateixa línia de muntatge. Els algorismes actuen directament en els sensors de la fàbrica, executant anàlisis predictives de control de qualitat i seguretat de manera immediata sense que la informació hagi de sortir de la planta de producció, reduint la dependència de xarxes externes.</p>
+                    <h3>La Solució: Intel·ligència a la fàbrica</h3>
+                    <p>
+                        La resposta d'IBM va ser implementar la plataforma <strong>IBM Edge Application Manager</strong>. En lloc d'enviar les dades fora, es van instal·lar petits servidors de processament directament a la línia de muntatge. 
+                    </p>
+                    <p>
+                        Ara, els programes informàtics i els algorismes actuen directament sobre els sensors de la fàbrica. Poden analitzar la qualitat de les peces o preveure si una màquina s'espatllarà de manera immediata. La informació es queda a la planta de producció, reduint dràsticament la dependència d'Internet i alliberant les xarxes externes d'una càrrega de treball innecessària.
+                    </p>
                 </div>
             </div>
 
             <article class="article-spacing">
                 <h2>Resultats i Impacte (Criteris ASG)</h2>
+                <p>L'aplicació d'aquest model de proximitat ha generat beneficis directes i mesurables en els àmbits Ambiental, Social i de Governança:</p>
                 <ul class="eco-list">
-                    <li><strong>Estalvi Energètic:</strong> Reducció del 35% en el consum de xarxa. Menys quilòmetres recorreguts per les dades equivalen a menys electricitat derivada dels routers i commutadors de fibra òptica intermedis, disminuint directament el consum elèctric de les infraestructures de telecomunicacions.</li>
-                    <li><strong>Eficiència de Hardware:</strong> Reutilització de servidors locals antics vinculats a l'Economia Circular. S'evita l'obsolescència programada de la maquinària mitjançant sistemes operatius optimitzats de codi obert que corren perfectament en equips recondicionats sense perdre potència de càlcul.</li>
-                    <li><strong>Decisions en Temps Real:</strong> Millora de la seguretat laboral dels treballadors gràcies a la baixa latència. La detecció d'anomalies a la maquinària pesant es redueix a mil·lisegons, fet que permet aturar els processos automatitzats perillosos abans que pugui ocórrer qualsevol accident laboral greu.</li>
+                    <li>
+                        <strong>Estalvi Energètic i Reducció d'Emissions:</strong> S'ha aconseguit una reducció del 35% en el consum global de la xarxa. En evitar que les dades viatgin milers de quilòmetres, s'apaga la necessitat de fer funcionar centenars de routers i quilòmetres de fibra òptica intermedis. Això es tradueix en una baixada directa del consum elèctric i de les emissions de CO₂ associades.
+                    </li>
+                    <li>
+                        <strong>Eficiència de Hardware i Economia Circular:</strong> Aquest sistema permet reutilitzar servidors locals més antics. Gràcies a sistemes operatius optimitzats, equips que es consideraven obsolets poden seguir funcionant perfectament per tasques de càlcul local. Això frena la generació de residus electrònics (e-waste) i allarga la vida útil de la maquinària.
+                    </li>
+                    <li>
+                        <strong>Decisions en Temps Real i Seguretat Laboral:</strong> Gràcies a la resposta immediata (baixa latència), la detecció d'anomalies en maquinària pesant es fa en qüestió de mil·lisegons. Això permet aturar els processos perillosos a l'instant, millorant exponencialment la seguretat dels treballadors i evitant accidents laborals.
+                    </li>
+                    <li>
+                        <strong>Privacitat i Seguretat de les Dades:</strong> En processar la informació sensible a la mateixa fàbrica sense enviar-la per la xarxa pública, es redueix dràsticament el risc de patir atacs informàtics o robatoris d'informació industrial durant la transmissió.
+                    </li>
                 </ul>
             </article>
 
             <div class="info-box success-info-box">
-                <h3>Conclusió de l'Anàlisi (RA6)</h3>
+                <h3>Conclusió de l'Anàlisi </h3>
                 <p>
-                    IBM demostra que el Edge Computing no és només una millora tècnica, sinó una eina de 
-                    <strong>Governança Sostenible</strong>. Permet a les empreses complir amb l'Agenda 2030 reduint de manera auditable les seves emissions d'abast 3, que són aquelles derivades de de proveïdors externs i serveis contractats al núvol. Aquest cas d'estudi real valida que la descentralització de les dades és l'única via viable per mantenir el creixement tecnològic de la Indústria 4.0 sense comprometre els objectius globals de descarbonització, eficiència de recursos i preservació del medi ambient a llarg termini.
+                    El cas d'IBM demostra clarament que l'Edge Computing no és només una simple actualització tècnica, sinó una eina fonamental de <strong>Governança Sostenible corporativa</strong>. 
+                </p>
+                <p>
+                    Aquest model permet a les grans empreses complir amb els objectius de l'Agenda 2030, ja que redueix de manera demostrable les seves "emissions d'abast 3" (les que provenen de proveïdors externs com els grans centres de dades en línia). Aquest cas d'estudi real valida que descentralitzar la informació i apropar la tecnologia a l'usuari és l'únic camí viable per continuar avançant en la Indústria 4.0. Es demostra que és possible mantenir la innovació i l'eficiència sense comprometre el medi ambient ni esgotar els recursos del nostre planeta.
                 </p>
             </div>
         </section>
